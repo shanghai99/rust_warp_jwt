@@ -1,5 +1,7 @@
+use std::clone;
 use serde::{Deserialize, Serialize};
 
+#[derive(clone)]
 pub struct User {
     pub uid: String,
     pub email: String,
